@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoCloBackG.png" translatesAutoresizingMaskIntoConstraints="NO" id="lzq-ay-AFi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7A-a6-lf3">
+                                <rect key="frame" x="78" y="147" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hIV-5i-Q0o">
+                                <rect key="frame" x="217" y="147" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="F5b-W3-bRG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbK-mG-zXJ">
+                                <rect key="frame" x="93" y="248" width="70" height="30"/>
+                                <state key="normal" title="sign up"/>
+                                <connections>
+                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OiA-lJ-jtz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDa-o5-uLh">
+                                <rect key="frame" x="220" y="248" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="rKM-cZ-bMq"/>
+                                </constraints>
+                                <state key="normal" title="sign in"/>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gml-GA-LHS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="already registered?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjP-i0-6VA">
+                                <rect key="frame" x="45" y="322" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoCloMan.png" translatesAutoresizingMaskIntoConstraints="NO" id="88Z-Nv-TCz">
+                                <rect key="frame" x="156" y="20" width="86" height="74"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHX-RE-4r5">
+                                <rect key="frame" x="176" y="48" width="46" height="30"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hIV-5i-Q0o" firstAttribute="leading" secondItem="A7A-a6-lf3" secondAttribute="trailing" constant="77" id="1Mb-76-DwQ"/>
+                            <constraint firstItem="hIV-5i-Q0o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="JJa-UL-JQZ"/>
+                            <constraint firstItem="BDa-o5-uLh" firstAttribute="baseline" secondItem="VbK-mG-zXJ" secondAttribute="baseline" id="LHo-Yd-f29"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hIV-5i-Q0o" secondAttribute="trailing" constant="45" id="Uex-Ph-4d5"/>
+                            <constraint firstItem="hIV-5i-Q0o" firstAttribute="leading" secondItem="A7A-a6-lf3" secondAttribute="trailing" constant="77" id="Xb8-UK-IQK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BDa-o5-uLh" secondAttribute="trailing" constant="68" id="YTe-LC-K12"/>
+                            <constraint firstItem="BDa-o5-uLh" firstAttribute="leading" secondItem="VbK-mG-zXJ" secondAttribute="trailing" constant="92" id="bs7-FQ-Htw"/>
+                            <constraint firstItem="A7A-a6-lf3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="58" id="eQY-XS-5Yr"/>
+                            <constraint firstItem="A7A-a6-lf3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="kci-Dj-1gZ"/>
+                            <constraint firstItem="hIV-5i-Q0o" firstAttribute="leading" secondItem="A7A-a6-lf3" secondAttribute="trailing" constant="77" id="lIq-vG-0F7"/>
+                            <constraint firstItem="BDa-o5-uLh" firstAttribute="top" secondItem="hIV-5i-Q0o" secondAttribute="bottom" constant="71" id="lXY-ZM-7Uq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hIV-5i-Q0o" secondAttribute="trailing" constant="45" id="vJl-FK-QLV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="eQY-XS-5Yr"/>
+                                <exclude reference="Uex-Ph-4d5"/>
+                                <exclude reference="Xb8-UK-IQK"/>
+                                <exclude reference="lIq-vG-0F7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="logibButton" destination="BDa-o5-uLh" id="kId-14-7Jo"/>
+                        <outlet property="password" destination="hIV-5i-Q0o" id="onG-Ed-Yex"/>
+                        <outlet property="registeredText" destination="HjP-i0-6VA" id="zWq-XX-omp"/>
+                        <outlet property="signupButton" destination="VbK-mG-zXJ" id="VLh-be-JkO"/>
+                        <outlet property="username" destination="A7A-a6-lf3" id="uh6-xc-gPf"/>
+                        <segue destination="bBT-e2-03h" kind="show" identifier="login" id="Huf-TJ-NHI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544.5" y="325.5"/>
+        </scene>
+        <!--Followers-->
+        <scene sceneID="0jb-DG-ZJ3">
+            <objects>
+                <tableViewController id="SJd-2V-Snh" customClass="TableViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sJO-u5-gMl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="AhO-mx-o7u">
+                            <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem id="Vaz-Wg-RgW">
+                                    <barButtonItem key="leftBarButtonItem" systemItem="done" id="ETR-Mb-8sE">
+                                        <connections>
+                                            <segue destination="bBT-e2-03h" kind="modal" modalPresentationStyle="fullScreen" id="xNl-EK-f0y"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="RHl-S5-XdP">
+                                <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RHl-S5-XdP" id="RSV-gL-GIf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SJd-2V-Snh" id="nYB-DJ-Xn0"/>
+                            <outlet property="delegate" destination="SJd-2V-Snh" id="Alw-Bz-cbB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Followers" id="brn-HX-aNv"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ox-CU-pIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049.5" y="325.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c35-Om-de9">
+            <objects>
+                <navigationController id="Sh4-eD-yh7" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MDS-7F-bE6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SJd-2V-Snh" kind="relationship" relationship="rootViewController" id="Fim-Sr-vfz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YC4-Na-qI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527.5" y="325.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lH0-E1-l3J">
+            <objects>
+                <viewController id="bBT-e2-03h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KSr-7f-dgY"/>
+                        <viewControllerLayoutGuide type="bottom" id="mRq-pJ-jHu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="67i-e0-kH4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoCloBackG.png" translatesAutoresizingMaskIntoConstraints="NO" id="p9A-fy-LuQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kab-XP-rni">
+                                <rect key="frame" x="251" y="35" width="91" height="30"/>
+                                <state key="normal" title="search users"/>
+                                <connections>
+                                    <segue destination="Sh4-eD-yh7" kind="modal" id="5GX-G6-YsX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cameraGoClo copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="zJC-Zc-JVO">
+                                <rect key="frame" x="156" y="615" width="62" height="44"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNL-AE-x9r">
+                                <rect key="frame" x="156" y="621" width="62" height="38"/>
+                                <connections>
+                                    <segue destination="D6s-zq-svg" kind="show" id="Lik-NN-ZaX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bx0-5x-bAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036.5" y="325.5"/>
+        </scene>
+        <!--Post Image View Controller-->
+        <scene sceneID="xDB-7l-dZg">
+            <objects>
+                <viewController id="D6s-zq-svg" customClass="PostImageViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RBl-rK-8rY"/>
+                        <viewControllerLayoutGuide type="bottom" id="NkV-mJ-4cI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o09-hu-RAO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoCloBackG.png" translatesAutoresizingMaskIntoConstraints="NO" id="wxp-Kw-cHT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ms-eH-pKD">
+                                <rect key="frame" x="167" y="525" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="postImage:" destination="D6s-zq-svg" eventType="touchUpInside" id="hDI-lY-7tc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoCloMan.png" translatesAutoresizingMaskIntoConstraints="NO" id="yu7-lT-7Xw">
+                                <rect key="frame" x="38" y="88" width="306" height="280"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOS-A6-1au">
+                                <rect key="frame" x="119" y="186" width="138" height="199"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseImage:" destination="D6s-zq-svg" eventType="touchUpInside" id="xWJ-aH-n8B"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OpA-g7-aeN">
+                                <rect key="frame" x="25" y="453" width="330" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choose an image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTV-qt-Rq3">
+                                <rect key="frame" x="120" y="225" width="142" height="21"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageToPost" destination="yu7-lT-7Xw" id="gr5-mT-My3"/>
+                        <outlet property="message" destination="OpA-g7-aeN" id="l2u-Ht-C8g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLv-nn-5dU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036.5" y="1120.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GoCloBackG.png" width="750" height="1334"/>
+        <image name="GoCloMan.png" width="375" height="360"/>
+        <image name="cameraGoClo copy.png" width="600" height="430"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Huf-TJ-NHI"/>
+    </inferredMetricsTieBreakers>
+</document>
