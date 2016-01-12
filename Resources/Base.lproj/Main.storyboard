@@ -184,15 +184,15 @@
                                     <segue destination="Sh4-eD-yh7" kind="modal" id="5GX-G6-YsX"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cameraGoClo copy.png" translatesAutoresizingMaskIntoConstraints="NO" id="zJC-Zc-JVO">
-                                <rect key="frame" x="156" y="615" width="62" height="44"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNL-AE-x9r">
-                                <rect key="frame" x="156" y="621" width="62" height="38"/>
+                                <rect key="frame" x="161" y="595" width="62" height="38"/>
                                 <connections>
                                     <segue destination="D6s-zq-svg" kind="show" id="Lik-NN-ZaX"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GoCloCam.png" translatesAutoresizingMaskIntoConstraints="NO" id="DsC-f9-WiB">
+                                <rect key="frame" x="163" y="592" width="55" height="40"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -267,8 +267,8 @@
     </scenes>
     <resources>
         <image name="GoCloBackG.png" width="750" height="1334"/>
+        <image name="GoCloCam.png" width="600" height="430"/>
         <image name="GoCloMan.png" width="375" height="360"/>
-        <image name="cameraGoClo copy.png" width="600" height="430"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Huf-TJ-NHI"/>

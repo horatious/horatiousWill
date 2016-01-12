@@ -17,12 +17,12 @@
 		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
-		923EFC8F1C41A906008224FA /* cameraGoClo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 923EFC8E1C41A906008224FA /* cameraGoClo copy.png */; settings = {ASSET_TAGS = (); }; };
 		923EFC931C4409D0008224FA /* GoCloMan.png in Resources */ = {isa = PBXBuildFile; fileRef = 923EFC921C4409D0008224FA /* GoCloMan.png */; settings = {ASSET_TAGS = (); }; };
 		923EFC951C440AA1008224FA /* GoCloBackG.png in Resources */ = {isa = PBXBuildFile; fileRef = 923EFC941C440AA1008224FA /* GoCloBackG.png */; settings = {ASSET_TAGS = (); }; };
 		923EFC991C44B28A008224FA /* PostImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923EFC981C44B28A008224FA /* PostImageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		923F9C7A1C3EBAF700CDEF32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923F9C791C3EBAF700CDEF32 /* LaunchScreen.storyboard */; };
 		923F9C7C1C3EBF0300CDEF32 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923F9C7B1C3EBF0300CDEF32 /* TableViewController.swift */; };
+		92EE8A0A1C4598B800EF99AD /* GoCloCam.png in Resources */ = {isa = PBXBuildFile; fileRef = 92EE8A091C4598B800EF99AD /* GoCloCam.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +41,12 @@
 		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		923EFC8E1C41A906008224FA /* cameraGoClo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cameraGoClo copy.png"; path = "../../../../cameraGoClo copy.png"; sourceTree = "<group>"; };
 		923EFC921C4409D0008224FA /* GoCloMan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoCloMan.png; sourceTree = "<group>"; };
 		923EFC941C440AA1008224FA /* GoCloBackG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoCloBackG.png; sourceTree = "<group>"; };
 		923EFC981C44B28A008224FA /* PostImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostImageViewController.swift; path = ../PostImageViewController.swift; sourceTree = "<group>"; };
 		923F9C791C3EBAF700CDEF32 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923F9C7B1C3EBF0300CDEF32 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		92EE8A091C4598B800EF99AD /* GoCloCam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoCloCam.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				814C3AC81B69877600E307BB /* Images.xcassets */,
-				923EFC8E1C41A906008224FA /* cameraGoClo copy.png */,
 				923EFC921C4409D0008224FA /* GoCloMan.png */,
+				92EE8A091C4598B800EF99AD /* GoCloCam.png */,
 				923EFC941C440AA1008224FA /* GoCloBackG.png */,
 				814C3AC91B69877600E307BB /* Info.plist */,
 			);
@@ -193,8 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
-				923EFC8F1C41A906008224FA /* cameraGoClo copy.png in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
+				92EE8A0A1C4598B800EF99AD /* GoCloCam.png in Resources */,
 				923F9C7A1C3EBAF700CDEF32 /* LaunchScreen.storyboard in Resources */,
 				923EFC931C4409D0008224FA /* GoCloMan.png in Resources */,
 				923EFC951C440AA1008224FA /* GoCloBackG.png in Resources */,
